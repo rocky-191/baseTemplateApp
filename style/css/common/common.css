@@ -1,0 +1,182 @@
+*{margin:0;padding:0}
+
+body, div{
+	border: none;
+	outline: none;
+}
+
+.tableWidth{
+	width: 100%;
+}
+
+.relPosition{
+	position: relative;
+}
+
+.floatRight{
+	float: right;
+}
+
+.floatLeft{
+	float:left;
+}
+
+.clearFloat{
+	clear: both;
+}
+
+.text_alignRight{
+	text-align: right;
+}
+
+.text_alignCenter{
+	text-align: center;
+}
+
+.color_f{
+	color: #fff;
+}
+
+.backgroundColor{
+	background: #fff;
+}
+
+.fontSize{
+	font-size: 0.3rem;
+}
+
+.fontSize1{
+	font-size: 0.2rem;
+}
+
+.fontSize2{
+	font-size: 0.22rem;
+}
+
+.fontSize3{
+	font-size: 0.24rem;
+}
+
+.fontSize4{
+	font-size: 0.26rem;
+}
+
+.fontSize5{
+	font-size: 0.28rem;
+}
+
+.fontBold{
+	font-weight: bold;
+}
+
+.display1{
+	display: inline-block;
+}
+
+.tableHead{
+	background: #3bafda;
+}
+
+.tableHead tr{
+	/*height: 0.25rem;
+	line-height: 0.25rem;*/
+	height: 0.5rem;
+	line-height: 0.5rem;
+}
+
+.tableHead td{
+	border-left: 1px solid #76c7e5;
+}
+
+.tableBody tr{
+	height: 0.7rem;
+	/*line-height: 0.8rem;*/
+	border-bottom: 4px solid #cad4d8;
+}
+
+.tableBody tr:last-child{
+	border-bottom:none ;
+}
+
+.arrowDown{
+	width: 0.15rem;
+    height: 0.15rem;
+    background: #3bafda;
+    display: inline-block;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    margin-bottom: 0.05rem;
+}
+
+.arrowRight{
+	width: 0.15rem;
+    height: 0.15rem;
+    background: #ebf7fb;
+    display: inline-block;
+    transform: rotate(45deg);
+    vertical-align: middle;
+    position: absolute;
+   	top:0.62rem
+}
+
+.marginTop{
+	margin-top: 10px;
+}
+
+/* public */
+/* 清除浮动 */
+.clear { zoom:1; }
+.clear:after { content:''; display:block; clear:both; }
+/* 定义盒模型为怪异和模型（宽高不受边框影响） */
+.boxSiz{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+-o-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+/* 强制换行 */
+.toWrap{
+word-break: break-all; /* 只对英文起作用，以字母作为换行依据。 */
+word-wrap: break-word; /* 只对英文起作用，以单词作为换行依据。*/
+white-space: pre-wrap; /* 只对中文起作用，强制换行。*/
+}
+
+/* 禁止换行 */
+.noWrap{
+white-space:nowrap;
+}
+
+/* 禁止换行,超出省略号 */
+.noWrapEllipsis{
+white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+
+/* 文字两端对齐 */
+.text-justify{
+text-align:justify;
+text-justify:inter-ideograph;
+}
+
+/* 定义盒模型为 flex布局兼容写法并让内容水平垂直居中 */
+
+.flex-center{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -o-box;
+	display: box;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	-o-box-pack: center;
+	box-pack: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-o-box-align: center;
+	box-align: center;
+}
+
+/* public end */
