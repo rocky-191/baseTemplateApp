@@ -1,2 +1,3 @@
 # baseTemplateApp
-app baseTemplate Modal
+app baseTemplate Modal  
+移动端基础样式整合
