@@ -1,0 +1,100 @@
+@CHARSET "UTF-8";
+
+.loginBG{
+	width: 100%;
+	height: 100%;
+	background:#252835;
+}
+
+.login{
+	margin:0rem 0.96rem 0rem 0.96rem;
+	padding-top: 0.8rem;
+}
+
+.fontSize5{
+	font-size: 0.6rem;
+}
+
+.LoginInput{
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 0.74rem;
+	line-height: 0.74rem;
+	width: 100%;
+	border: 1px solid #c1cedc;
+	background: transparent;
+	padding-left: 0.6rem;
+	color: #ffffff;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.loginForm{
+	margin-top: 1rem;
+	margin-bottom: 1.3rem;
+}
+
+.LoginInput::-webkit-input-placeholder {
+    color:#ffffff; /*修改webkit中input的planceholder样式*/
+}
+
+.LoginInput:focus::-webkit-input-placeholder {
+    color:transparent; /*修改webkit中focus状态下input的planceholder样式*/
+}
+
+.Loginuser{
+	width: 0.35rem;
+	height: 0.38rem;
+	display: inline-block;
+	background: url(../../image/user.png) no-repeat;
+	background-size: 90%;
+	position: absolute;
+	top: 0.25rem;
+	left: 0.2rem;
+}
+
+.loginPwd{
+	width: 0.29rem;
+	height: 0.34rem;
+	display: inline-block;
+	background: url(../../image/pwd.png) no-repeat;
+	background-size: 90%;
+	position: absolute;
+	top: 0.25rem;
+	left: 0.2rem;
+}
+
+.loginBtn{
+	width: 100%;
+	height: 0.79rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	background: #5bba0c;
+	border: none;
+	outline: none;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	font-size: 0.36rem;
+	color: #ffffff;
+	margin-top: 0.85rem;
+	margin-bottom: 0.4rem;
+}
+
+.loginBtn:active{
+	background: #439e00;
+}
+
+.forgetPwd{
+	color: #b4c0cc;
+	float: right;
+	font-size: 0.3rem;
+}
+
+.forgetPwd:active{
+	color: #aaaaaa;
+}
+
+.marginTop2{
+	margin-top: 20px;
+}
