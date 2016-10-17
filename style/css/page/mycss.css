@@ -4,3 +4,84 @@
   height: 3rem;
   margin-top: 0.1rem;
 }
+.starGradeBlock {
+  margin-top: 0.1rem;
+}
+.section_part1_ul {
+  display: flex;
+  display: -webkit-flex;
+}
+.section_part1_ul li {
+  flex: 1;
+  -webkit-flex: 1;
+  flex-direction: row;
+  text-align: center;
+  height: 0.76rem;
+  line-height: 0.76rem;
+  border-bottom: 0.04rem solid #f6f6f6;
+  color: #333;
+  font-size: 0.26rem;
+}
+.section_part1_ul li.workLiActive {
+  color: #00a8ff;
+  border-bottom: 0.04rem solid #01ccff;
+}
+.zp_lxr_content ul li {
+  width: 90%;
+  padding-left: 5%;
+  height: 0.89rem;
+  line-height: 0.89rem;
+  border-bottom: 1px solid #ddd;
+}
+.checkedRadio {
+  width: 0.45rem;
+  height: 0.45rem;
+  float: left;
+  cursor: pointer;
+  text-align: center;
+  border: 0.02rem solid #cecece;
+  border-radius: 100%;
+  margin-top: 0.2rem;
+  margin-right: 0.2rem ;
+}
+.on_check {
+  width: 0.285rem;
+  height: 0.285rem;
+  border: 0.09rem solid #fff;
+  -webkit-box-shadow: 0 0 0  0.02rem #cecece;
+  box-shadow: 0 0 0  0.02rem #cecece;
+  background: #00a2ff;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+}
+.starBlock {
+  text-align: center;
+  margin-bottom: 0.2rem;
+}
+.starBlock span {
+  font-size: 0.75rem;
+  color: #f4c600;
+}
+.starBlock span.greyStar {
+  color: #666;
+}
+.sideBarUl1 {
+  display: block;
+  list-style: none;
+  overflow: auto;
+}
+.sideBarUl1 li {
+  color: #666;
+  font-size: 0.3rem;
+  line-height: 0.9rem;
+  height: 0.9rem;
+  border-bottom: 1px solid #ddd;
+  padding-left: 0.2rem;
+}
+.timeInput {
+  border: none;
+  background: transparent;
+  font-size: 0.3rem;
+  color: #333;
+  outline: none;
+}

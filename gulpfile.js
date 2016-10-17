@@ -50,7 +50,7 @@ gulp.task('watch2',function(){
 
 gulp.task('watch3', function() {
     livereload.listen();
-    gulp.watch('style/css/page/less/*.less', ['testless']);
+    gulp.watch('style/css/less/*.less', ['testless']);
 });
 
  

@@ -11,6 +11,46 @@ window.onload=function(){
 	    // 如果需要分页器
 	    pagination: '.swiper-pagination',
 	});
+	$(".js-workLi li").on("touchstart",function(){
+		var self=this;
+		$(self).addClass("workLiActive");
+		$(self).siblings().removeClass("workLiActive");
+		var ulIndex=$(self).index();
+		$(".js-workLi-content div").eq(ulIndex).show().siblings().hide();
+	});
+	$(".js_starGrade span").on("touchstart",function(){
+		$(this).removeClass("greyStar");
+		$(this).prevAll().removeClass("greyStar");
+		$(this).nextAll().addClass("greyStar");
+		var greyStarNum=$(".js_starGrade span.greyStar").length;
+	});
+	//单选钮
+	$(".js-zp-lxr li").on("touchstart",function(){
+		var self=this;
+		var radioCheckObj=$(self).find("div.checkedRadio");
+		radioCheckObj.addClass("on_check");
+		radioCheckObj.parent().siblings().find("div.checkedRadio").removeClass("on_check");
+	});
+	//选择时间
+	//选择时间
+	var currYear = (new Date()).getFullYear();
+	var opt={};
+	opt.date = {preset : 'date'};
+	opt.datetime = {preset : 'datetime'};
+	opt.time = {preset : 'time'};
+	opt.defaultType = {
+		theme: 'android-ics light', //皮肤样式
+        display: 'modal', //显示方式 
+        mode: 'scroller', //日期选择模式
+		dateFormat: 'yyyymmdd',
+		lang: 'zh',
+		showNow: true,
+		nowText: "今天",
+        startYear: currYear - 10, //开始年份
+        endYear: currYear + 10 //结束年份
+	};
+	$("#ksTime").mobiscroll($.extend(opt['date'], opt['defaultType']));
+	$("#jsTime").mobiscroll($.extend(opt['date'], opt['defaultType']));
 };
 
 //显示遮罩层js

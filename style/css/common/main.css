@@ -161,3 +161,15 @@ body {
 .fontSize32{
 	font-size: 0.32rem;
 }
+
+.bgColor{
+	background: #fff;
+}
+
+.fontSize30{
+	font-size: 0.3rem;
+}
+
+.color_3{
+	color: #333;
+}

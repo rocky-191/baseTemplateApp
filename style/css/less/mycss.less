@@ -1,8 +1,109 @@
 /*声明变量*/
 @height:3rem;
 @marginTop01:0.1rem;
+@displayFlex:flex;
+@flex1:1;
+@color3:#333;
+@color6:#666;
+@height1:0.76rem;
+@border: 1px solid #ddd;
+@borderRadius100:100%;
+@textAlignCenter:center;
 /*调用变量*/
 .swiperDiv{                                
   height: @height;
-  margin-top: @marginTop01;                            
+  margin-top:@marginTop01;                            
+}
+
+.starGradeBlock{
+    margin-top:@marginTop01;
+}
+
+.section_part1_ul{
+    display:@displayFlex;
+    display: -webkit-flex;
+}
+
+.section_part1_ul li{
+    flex: @flex1;
+    -webkit-flex: @flex1;
+    flex-direction: row;
+    text-align: @textAlignCenter;
+    height:@height1;
+    line-height: @height1;
+    border-bottom: 0.04rem solid #f6f6f6;
+    color: @color3;
+    font-size: 0.26rem;
+}
+
+.section_part1_ul li.workLiActive{
+    color: #00a8ff;
+    border-bottom: 0.04rem solid #01ccff;
+}
+
+.zp_lxr_content ul li{
+    width: 90%;
+    padding-left: 5%;
+    height: 0.89rem;
+    line-height: 0.89rem;
+    border-bottom:@border;
+}
+
+.checkedRadio{
+    width:0.45rem;
+    height:0.45rem;
+    float: left;
+    cursor: pointer;
+    text-align: @textAlignCenter;
+    border: 0.02rem solid #cecece;
+    border-radius:@borderRadius100;
+    margin-top: 0.2rem;
+    margin-right:0.2rem ;
+}
+
+.on_check{ 
+    width:0.285rem; 
+    height:0.285rem; 
+    border:0.09rem solid #fff;
+    -webkit-box-shadow:0 0 0  0.02rem #cecece;
+    box-shadow:0 0 0  0.02rem #cecece;
+    background: #00a2ff;
+    border-radius:@borderRadius100;
+    -webkit-border-radius:@borderRadius100;  
 } 
+
+.starBlock{
+    text-align: @textAlignCenter;
+    margin-bottom: 0.2rem;
+}
+
+.starBlock span{
+    font-size: 0.75rem;
+    color:#f4c600;
+}
+
+.starBlock span.greyStar{
+    color:@color6;
+}
+
+.sideBarUl1{
+    display:block;
+    list-style:none;
+    overflow: auto;
+}
+.sideBarUl1 li{
+    color:@color6;
+    font-size:0.3rem;
+    line-height:0.9rem;
+    height:0.9rem;
+    border-bottom:@border;
+    padding-left: 0.2rem;
+}
+
+.timeInput{
+    border: none;
+    background: transparent;
+    font-size: 0.3rem;
+    color:@color3;
+    outline: none;
+}
