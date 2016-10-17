@@ -32,6 +32,7 @@ body {
 	position: fixed;
 	top:0;
 	width: 100%;
+	z-index: 10;
 }
 
 .header_label{
@@ -155,4 +156,8 @@ body {
 	margin-right: 0.1rem;
 	border: none;
 	background: transparent;
+}
+
+.fontSize32{
+	font-size: 0.32rem;
 }

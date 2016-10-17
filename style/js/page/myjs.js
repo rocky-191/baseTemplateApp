@@ -5,6 +5,12 @@
 
 window.onload=function(){
 	FastClick.attach(document.body);
+	var mySwiper = new Swiper ('.swiper-container', {
+	    loop: true,
+	    autoplay: 5000,//可选选项，自动滑动
+	    // 如果需要分页器
+	    pagination: '.swiper-pagination',
+	});
 };
 
 //显示遮罩层js

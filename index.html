@@ -9,22 +9,40 @@
 		<meta content="email=no" name="format-detection">
 		<title>示例</title>
 		<link rel="stylesheet" href="style/css/base/reset.css" />
+		<link rel="stylesheet" href="style/css/common/swiper-3.3.1.min.css" />
 		<link rel="stylesheet" href="style/css/common/common.css" />
-		<script type="text/javascript" src="style/js/base/jquery-1.9.1.min.js" ></script>
+		<link rel="stylesheet" href="style/css/common/main.css" />
+		<link rel="stylesheet" href="style/css/page/mycss.css" />
+		<script type="text/javascript" src="style/js/base/jquery-3.1.0.min.js" ></script>
 		<script type="text/javascript" src="style/js/base/flexible.js" ></script>
 		<script type="text/javascript" src="style/js/common/fastclick.js" ></script>
+		<script type="text/javascript" src="style/js/common/swiper-3.3.1.jquery.min.js" ></script>
 		<script type="text/javascript" src="style/js/common/init.js" ></script>
 		<script type="text/javascript" src="style/js/page/myjs.js" ></script>
 	</head>
 	<body>
 		<header class="PageHeader">
-			
+			<label class="fontSize32 color_f">基础样式</label>
 		</header>
 		<div class="content">
-			
-		</div>
-		<div class="foot_btnDiv">
-			
+			<div class="swiperBlock">
+				<label class="fontSize5">轮播</label>
+				<div class="swiperDiv swiper-container">
+					<div class="swiper-wrapper">
+				        <div class="swiper-slide">
+				        	内容一
+				        </div>
+				        <div class="swiper-slide">
+				        	内容二
+				        </div>
+				        <div class="swiper-slide">
+				        	内容三
+				        </div>
+				    </div>
+				    <!-- 如果需要分页器 -->
+				    <div class="swiper-pagination"></div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

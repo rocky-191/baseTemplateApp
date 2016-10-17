@@ -5,7 +5,7 @@ var gulp = require('gulp'), //本地安装gulp所用到的地方
 
 //定义一个testless任务
 gulp.task('testless', function() {
-    gulp.src('style/css/page/less/*.less')
+    gulp.src('style/css/less/*.less')
         .pipe(less())
         .pipe(gulp.dest('style/css/page'))
         .pipe(livereload());
@@ -54,7 +54,7 @@ gulp.task('watch3', function() {
 });
 
  
-gulp.task('default',['testCss','testHtml','testJs','watch','watch1','watch2','watch3']); //定义默认任务 elseTask为其他任务，该示例没有定义elseTask任务
+gulp.task('default',['testless','testCss','testHtml','testJs','watch','watch1','watch2','watch3']); //定义默认任务 elseTask为其他任务，该示例没有定义elseTask任务
  
 //gulp.task(name[, deps], fn) 定义任务  name：任务名称 deps：依赖任务名称 fn：回调函数
 //gulp.src(globs[, options]) 执行任务处理的文件  globs：处理的文件路径(字符串或者字符串数组) 
