@@ -1,0 +1,117 @@
+/*声明变量*/
+/**调用变量***/
+.PageHeader {
+  background: #f8f8f8;
+  border-bottom: 1px solid #adadad;
+}
+.liTitle {
+  width: 6.4rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.filter {
+  width: 0.42rem;
+  height: 100%;
+  background: url(../../image/filt.png) no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  right: 0.3rem;
+  top: 0;
+}
+/***侧边栏样式***/
+saside {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #fafafa;
+  width: 60%;
+  height: 100%;
+  z-index: 110;
+}
+saside > ul {
+  display: block;
+  list-style: none;
+  overflow: auto;
+}
+saside > ul li {
+  color: #666;
+  font-size: 0.3rem;
+  line-height: 0.9rem;
+  height: 0.9rem;
+  border-bottom: 1px solid #ddd;
+  padding-left: 0.2rem;
+}
+saside > ul li:active {
+  background: #D1D1D1;
+}
+.sideNav_part1 {
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.tickIcon1 {
+  width: 0.31rem;
+  height: 100%;
+  float: right;
+  display: inline-block;
+  margin-right: 0.3rem;
+  background: url(../../image/slideout-copy.png) no-repeat center;
+  background-size: 100%;
+}
+.tickIcon2 {
+  background: url(../../image/slideout-copy1.png) no-repeat center;
+  background-size: 100%;
+}
+.sideNavFoot {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0.98rem;
+  line-height: 0.98rem;
+  background: #f5f9fd;
+  border-top: 1px solid #ddd;
+}
+.sideNavFootUl {
+  display: flex;
+  display: -webkit-flex;
+}
+.sideNavFootUl li {
+  flex: 1;
+  flex-direction: row;
+  text-align: center;
+  font-size: 0.3rem;
+  color: #666;
+  background: #f6f6f6;
+}
+.sideNavFootUl li:last-child {
+  border-left: 1px solid #ddd;
+}
+.sideNavFootUl li.sideNavFootLi_active {
+  background: #e8e8e8;
+}
+.work_section_part3_ul li {
+  height: 1.5rem;
+  padding: 0.3rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+.progressBarBg {
+  height: 0.1rem;
+  background: #eeeeee;
+}
+.progressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 0.1rem;
+  background: #01ccff;
+}
+.progressBarWidth {
+  width: 50%;
+}
+.progressBarWidth100 {
+  width: 100%;
+}
