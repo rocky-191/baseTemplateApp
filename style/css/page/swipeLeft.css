@@ -24,14 +24,14 @@
 .work_contentUl .item.selected {
   transform: translate(-15%, 0);
   -webkit-transform: translate(-15%, 0);
-  transition: all 0.3s linear;
-  -webkit-transition: all 0.3s linear;
+  transition: all 0.05s linear;
+  -webkit-transition: all 0.05s linear;
 }
 .work_contentUl .item {
   overflow: hidden;
   padding-right: 0.15rem;
   width: 120%;
-  -webkit-transition: all 0.1s linear;
+  -webkit-transition: all 0.05s linear;
 }
 .confirm {
   display: block;
