@@ -27,7 +27,8 @@ body {
 .PageHeader{
 	height: 0.88rem;
 	line-height: 0.88rem;
-	background: #323232;
+	background: #f8f8f8;
+  	border-bottom: 1px solid #adadad;
 	text-align: center;
 	position: fixed;
 	top:0;
