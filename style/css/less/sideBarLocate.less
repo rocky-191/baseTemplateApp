@@ -1,0 +1,96 @@
+/*声明变量*/
+@height:0.9rem;
+@height01:0.1rem;
+@border: 1px solid #ddd;
+@color3:#333;
+@color6:#666;
+@overflowHidden:hidden;
+@textAlignCenter:center;
+/**调用变量***/
+
+.r_sysUl{
+    margin-top:@height01;
+}
+
+.r_sysUl li{
+    height:@height;
+    line-height:@height;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom:@border;
+}
+
+.zIndex{
+    z-index: 100;
+}
+
+#letter{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 5px;
+    font-size: 75px;
+    color: @color3;
+    text-align: @textAlignCenter;
+    background: rgba(145,145,145,0.6);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin:-50px 0px 0px -50px;
+    z-index: 99;
+    display: none;
+}
+#letter img{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin:25px 0px 0px 25px;
+}
+.sort_box{
+    width: 100%;
+    overflow: @overflowHidden;
+}
+.sort_list{
+    position: relative;
+}
+
+.sort_list .num_logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    overflow: @overflowHidden;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+.sort_list .num_logo img{
+    width: 50px;
+    height: 50px;
+}
+.sort_list .num_name{
+    color: #000;
+}
+
+.sort_letter{
+    height: 0.4rem;
+    line-height: 0.4rem;
+    padding-left: 20px;
+    color:#787878;
+    font-size: 14px;
+    background: #eeeeee;
+}
+.initials{
+    position: fixed;
+    top: 1rem;
+    right: 0px;
+    height: 100%;
+    width: 15px;
+    padding-right: 5px;
+    text-align: @textAlignCenter;
+    font-size: 12px;
+    z-index: 99;
+    background: rgba(145,145,145,0);
+}
+.initials li img{
+    width: 14px;
+}
