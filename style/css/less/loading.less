@@ -1,0 +1,82 @@
+/*声明变量*/
+@width:0.12rem;
+@border: 1px solid #ddd;
+@borderRadius:100%;
+@color3:#333;
+@color6:#666;
+@textAlignCenter:center;
+@posA:absolute;
+@posR:relative;
+/**调用变量***/
+.spinner{
+  position: @posA;
+  top:50%;
+  left: 50%;
+  z-index: 11;
+  width:1.2rem;
+  margin-left: -0.6rem;
+  margin-top: -0.06rem;
+  text-align: @textAlignCenter;
+}
+.spinner>div{
+  width:@width;
+  height:@width;
+  background-color: #67CF22;
+  border-radius: @borderRadius;
+  display: inline-block;
+  -webkit-animation:bouncedelay 2.8s infinite ease-in-out;
+          animation:bouncedelay 2.8s infinite ease-in-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.spinner .bounce1{
+  background-color: #cd402e;
+}
+.spinner .bounce2{
+  -webkit-animation-delay: -0.16s;
+          animation-delay: -0.16s;
+  background-color: #b07da8;
+}
+.spinner .bounce3{
+  -webkit-animation-delay: -0.32s;
+          animation-delay: -0.32s;
+  background-color:#f1b428;
+}
+.spinner .bounce4{
+  -webkit-animation-delay: -0.48s;
+          animation-delay: -0.48s;
+  background-color: #06AAA2;
+}
+.spinner .bounce5{
+  -webkit-animation-delay: -0.64s;
+          animation-delay: -0.64s;
+  background-color: #FF0909;
+}
+@-webkit-keyframes bouncedelay{
+  0%{
+    -webkit-transform: translate(-4rem,0);
+    opacity: 0;
+  }
+  35%,65%{
+    -webkit-transform: translate(0,0);
+    opacity: 1;
+  }
+  100%{
+    -webkit-transform:translate(4rem,0);
+    opacity: 0;
+  }
+}
+@keyframes bouncedelay{
+  0%{
+    transform: translate(-4rem,0);
+    opacity: 0;
+  }
+  35%,65%{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  100%{
+    transform:translate(4rem,0);
+    opacity: 0;
+  }
+}
