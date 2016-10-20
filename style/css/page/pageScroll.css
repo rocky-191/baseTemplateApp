@@ -1,0 +1,36 @@
+/*声明变量*/
+/**调用变量***/
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.con {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.red,
+.blue,
+.green,
+.yellow {
+  width: 100%;
+  height: 100%;
+  font-size: 0.32rem;
+}
+.red {
+  background: red;
+}
+.blue {
+  background: blue;
+}
+.green {
+  background: green;
+}
+.yellow {
+  background: yellow;
+}
