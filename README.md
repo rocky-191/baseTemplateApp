@@ -8,4 +8,7 @@ app baseTemplate Modal
 下拉刷新加载数据实例：[https://github.com/rocky-191/baseTemplateApp/blob/master/dropLoadMore.html](http://htmlpreview.github.io/?https://github.com/rocky-191/baseTemplateApp/blob/master/dropLoadMore.html)  
 列表左滑操作实例：[https://github.com/rocky-191/baseTemplateApp/blob/master/swipeLeft.html](http://htmlpreview.github.io/?https://github.com/rocky-191/baseTemplateApp/blob/master/swipeLeft.html)  
 侧滑菜单选项实例：[https://github.com/rocky-191/baseTemplateApp/blob/master/layoutDemo.html](http://htmlpreview.github.io/?https://github.com/rocky-191/baseTemplateApp/blob/master/layoutDemo.html)  
-侧边栏字母定位实例：[https://github.com/rocky-191/baseTemplateApp/blob/master/sideBarLocate.html](http://htmlpreview.github.io/?https://github.com/rocky-191/baseTemplateApp/blob/master/sideBarLocate.html)
+侧边栏字母定位实例：[https://github.com/rocky-191/baseTemplateApp/blob/master/sideBarLocate.html](http://htmlpreview.github.io/?https://github.com/rocky-191/baseTemplateApp/blob/master/sideBarLocate.html)  
+
+1.0.1 version  
+新增了抽奖效果、刮刮乐、侧边栏滑出、页面上下翻页、表单按钮美化样式
