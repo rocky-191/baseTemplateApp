@@ -1,0 +1,61 @@
+/*声明变量*/
+/**调用变量***/
+body {
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+body.active {
+  transform: translate3d(150px, 0, 0);
+  -webkit-transform: translate3d(150px, 0, 0);
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+.PageHeader .btn-slide-bar {
+  width: 0.44rem;
+  height: 0.44rem;
+  cursor: pointer;
+  line-height: 2.8;
+  position: absolute;
+  top: 0;
+  left: 0.2rem;
+}
+.PageHeader .btn-slide-bar::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #999;
+  display: inline-block;
+  box-shadow: 0 7px 0 #999, 0 -7px 0 #999;
+}
+.wraper-page {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  bottom: 44px;
+  left: 0;
+  overflow: hidden;
+}
+.slide-bar {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  background-color: #333;
+  width: 150px;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(-150px, 0, 0);
+  -webkit-transform: translate3d(-150px, 0, 0);
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+.slide-bar li {
+  padding-left: 10px;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: left;
+  color: #fff;
+  border-bottom: 1px solid #222;
+}
