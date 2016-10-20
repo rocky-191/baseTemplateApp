@@ -78,11 +78,18 @@ saside > ul li:active {
   border-top: 1px solid #ddd;
 }
 .sideNavFootUl {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   display: -webkit-flex;
 }
 .sideNavFootUl li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   text-align: center;
   font-size: 0.3rem;

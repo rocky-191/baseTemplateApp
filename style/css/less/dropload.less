@@ -39,7 +39,8 @@
     line-height: 50px;
     text-align: @textAlignCenter;
     -webkit-transform:translate(-50%,0);
-    transform:translate(-50%,0);
+    -ms-transform:translate(-50%,0);
+        transform:translate(-50%,0);
 }
 .dropload-load .loading{
     display: inline-block;
@@ -66,12 +67,15 @@
 }
 @keyframes rotate {
     0% {
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
     }
     50% {
-        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
     }
     100% {
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
 }

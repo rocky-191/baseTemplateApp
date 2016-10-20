@@ -25,9 +25,14 @@
 }
 
 .section_part1_ul li{
-    flex: @flex1;
+    -webkit-box-flex: @flex1;
+        -ms-flex: @flex1;
+            flex: @flex1;
     -webkit-flex: @flex1;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     text-align: @textAlignCenter;
     height:@height1;
     line-height: @height1;
@@ -65,7 +70,6 @@
     width:0.285rem; 
     height:0.285rem; 
     border:0.09rem solid #fff;
-    -webkit-box-shadow:0 0 0  0.02rem #cecece;
     box-shadow:0 0 0  0.02rem #cecece;
     background: #00a2ff;
     border-radius:@borderRadius100;

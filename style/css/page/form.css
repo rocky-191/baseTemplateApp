@@ -26,6 +26,7 @@
 }
 /*switch*/
 .toggle .track-switch {
+  -webkit-transition: all ease-in-out 0.25s 0s;
   transition: all ease-in-out 0.25s 0s;
   display: inline-block;
   box-sizing: border-box;
@@ -50,7 +51,10 @@
   border-radius: 100%;
   background: #fff;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.35), 0 1px 1px rgba(0, 0, 0, 0.15);
+  -webkit-transition: background, -webkit-transform 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
+  transition: background, -webkit-transform 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
   transition: background, transform 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
+  transition: background, transform 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s, -webkit-transform 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
 }
 .toggle input:checked + .track-switch .handle {
   -webkit-transform: translate3d(20px, 0, 0);
@@ -63,6 +67,7 @@
 }
 /*checkbox*/
 .toggle .track-checkbox {
+  -webkit-transition: all ease-in-out 0.25s 0s;
   transition: all ease-in-out 0.25s 0s;
   display: inline-block;
   box-sizing: border-box;
@@ -85,7 +90,10 @@
   width: 27px;
   height: 27px;
   border-radius: 100%;
+  -webkit-transition: background, visibility, -webkit-transform 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
+  transition: background, visibility, -webkit-transform 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
   transition: background, visibility, transform 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
+  transition: background, visibility, transform 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s, -webkit-transform 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
 }
 .toggle .track-checkbox .handle::before {
   content: " ";
@@ -95,7 +103,10 @@
   width: 2px;
   height: 30%;
   background: #4cd964;
+  -webkit-transform: rotate(-40deg);
+  -ms-transform: rotate(-40deg);
   transform: rotate(-40deg);
+  -webkit-transition: all 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
   transition: all 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
   visibility: hidden;
 }
@@ -107,7 +118,10 @@
   width: 2px;
   height: 58%;
   background: #4cd964;
+  -webkit-transform: rotate(-140deg);
+  -ms-transform: rotate(-140deg);
   transform: rotate(-140deg);
+  -webkit-transition: all 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
   transition: all 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
   visibility: hidden;
 }
@@ -125,6 +139,7 @@
 }
 /*radio*/
 .toggle .track-radio {
+  -webkit-transition: all ease-in-out 0.25s 0s;
   transition: all ease-in-out 0.25s 0s;
   display: inline-block;
   box-sizing: border-box;
@@ -147,7 +162,10 @@
   width: 27px;
   height: 27px;
   border-radius: 100%;
+  -webkit-transition: background, visibility, -webkit-transform 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
+  transition: background, visibility, -webkit-transform 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
   transition: background, visibility, transform 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
+  transition: background, visibility, transform 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s, -webkit-transform 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
 }
 .toggle .track-radio .handle::before {
   content: " ";
@@ -157,7 +175,10 @@
   width: 2px;
   height: 30%;
   background: #4cd964;
+  -webkit-transform: rotate(-40deg);
+  -ms-transform: rotate(-40deg);
   transform: rotate(-40deg);
+  -webkit-transition: all 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
   transition: all 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
   visibility: hidden;
 }
@@ -169,7 +190,10 @@
   width: 2px;
   height: 58%;
   background: #4cd964;
+  -webkit-transform: rotate(-140deg);
+  -ms-transform: rotate(-140deg);
   transform: rotate(-140deg);
+  -webkit-transition: all 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
   transition: all 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
   visibility: hidden;
 }

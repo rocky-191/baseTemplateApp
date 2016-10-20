@@ -1,13 +1,27 @@
 //导入工具包 require('node_modules里对应模块')
 var gulp = require('gulp'), //本地安装gulp所用到的地方
     less = require('gulp-less'),
-    livereload = require('gulp-livereload');
+    autoprefixer = require('gulp-autoprefixer'),//自动添加前缀
+    livereload = require('gulp-livereload');//自动刷新
 
 //定义一个testless任务
 gulp.task('testless', function() {
     gulp.src('style/css/less/*.less')
         .pipe(less())
         .pipe(gulp.dest('style/css/page'))
+        .pipe(livereload());
+});
+
+gulp.task('testAutoFx', function () {
+    gulp.src('style/css/less/*.less')
+        .pipe(autoprefixer({
+            browsers: ['last 3 versions', 'Android >= 4.0'],
+            cascade: true, //是否美化属性值 默认：true 像这样：
+            //-webkit-transform: rotate(45deg);
+            //        transform: rotate(45deg);
+            remove:true //是否去掉不必要的前缀 默认：true 
+        }))
+        .pipe(gulp.dest('style/css/less'))
         .pipe(livereload());
 });
 
@@ -54,7 +68,7 @@ gulp.task('watch3', function() {
 });
 
  
-gulp.task('default',['testless','testCss','testHtml','testJs','watch','watch1','watch2','watch3']); //定义默认任务 elseTask为其他任务，该示例没有定义elseTask任务
+gulp.task('default',['testAutoFx','testless','testCss','testHtml','testJs','watch','watch1','watch2','watch3']); //定义默认任务 elseTask为其他任务，该示例没有定义elseTask任务
  
 //gulp.task(name[, deps], fn) 定义任务  name：任务名称 deps：依赖任务名称 fn：回调函数
 //gulp.src(globs[, options]) 执行任务处理的文件  globs：处理的文件路径(字符串或者字符串数组) 
