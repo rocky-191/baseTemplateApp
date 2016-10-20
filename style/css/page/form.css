@@ -29,6 +29,7 @@
   -webkit-transition: all ease-in-out 0.25s 0s;
   transition: all ease-in-out 0.25s 0s;
   display: inline-block;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 51px;
   height: 31px;
@@ -50,6 +51,7 @@
   height: 27px;
   border-radius: 100%;
   background: #fff;
+  -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.35), 0 1px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.35), 0 1px 1px rgba(0, 0, 0, 0.15);
   -webkit-transition: background, -webkit-transform 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
   transition: background, -webkit-transform 0.3s cubic-bezier(0, 1.1, 1, 1.1) 0s;
@@ -70,6 +72,7 @@
   -webkit-transition: all ease-in-out 0.25s 0s;
   transition: all ease-in-out 0.25s 0s;
   display: inline-block;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 31px;
   height: 31px;
@@ -142,6 +145,7 @@
   -webkit-transition: all ease-in-out 0.25s 0s;
   transition: all ease-in-out 0.25s 0s;
   display: inline-block;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 31px;
   height: 31px;

@@ -26,7 +26,8 @@
     width: 0.42rem;
     height:@borderRadius;
     background: url(../../image/filt.png) no-repeat center;
-    background-size:@borderRadius;
+    -webkit-background-size:@borderRadius @borderRadius;
+            background-size:@borderRadius;
     position: absolute;
     right: 0.3rem;
     top: 0;
@@ -54,12 +55,14 @@ saside>ul li:active{
     display: inline-block;
     margin-right: 0.3rem;
     background: url(../../image/slideout-copy.png) no-repeat center;
-    background-size:@borderRadius;
+    -webkit-background-size:@borderRadius @borderRadius;
+            background-size:@borderRadius;
 }
 
 .tickIcon2{
     background: url(../../image/slideout-copy1.png) no-repeat center;
-    background-size:@borderRadius;
+    -webkit-background-size:@borderRadius @borderRadius;
+            background-size:@borderRadius;
 }
 
 .sideNavFoot{
@@ -82,10 +85,12 @@ saside>ul li:active{
 .sideNavFootUl li{
     -webkit-box-flex: 1;
         -ms-flex: 1;
+            -webkit-flex: 1;
             flex: 1;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
+            -webkit-flex-direction: row;
             flex-direction: row;
     text-align: center;
     font-size: 0.3rem;

@@ -19,6 +19,7 @@
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
+  -webkit-flex-direction: row;
   flex-direction: row;
   text-align: center;
   height: 0.76rem;
@@ -53,6 +54,7 @@
   width: 0.285rem;
   height: 0.285rem;
   border: 0.09rem solid #fff;
+  -webkit-box-shadow: 0 0 0  0.02rem #cecece;
   box-shadow: 0 0 0  0.02rem #cecece;
   background: #00a2ff;
   border-radius: 100%;

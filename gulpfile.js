@@ -12,10 +12,33 @@ gulp.task('testless', function() {
         .pipe(livereload());
 });
 
+var browserOptions = {
+  browsers: [
+    'last 3 versions',
+    'ie >= 6',
+    'firefox >= 30',
+    'chrome >= 34',
+    'safari >= 6',
+    'opera >= 12.1',
+    'ios >= 6',
+    'android >= 2.3',
+    'and_uc 9.9',
+  ]
+};
+
 gulp.task('testAutoFx', function () {
     gulp.src('style/css/less/*.less')
         .pipe(autoprefixer({
-            browsers: ['last 3 versions', 'Android >= 4.0'],
+            browsers: ['last 3 versions',
+					    'ie >= 6',
+					    'firefox >= 30',
+					    'chrome >= 34',
+					    'safari >= 6',
+					    'opera >= 12.1',
+					    'ios >= 6',
+					    'android >= 2.3',
+					    'UCAndroid>=9.9'
+					],
             cascade: true, //是否美化属性值 默认：true 像这样：
             //-webkit-transform: rotate(45deg);
             //        transform: rotate(45deg);
