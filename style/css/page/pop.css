@@ -1,0 +1,67 @@
+/*声明变量*/
+/**调用变量***/
+.popBtn {
+  display: inline-block;
+  height: 0.5rem;
+  width: 2rem;
+  background: #4266ff;
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-radius: 0.1rem;
+  margin-top: 0.2rem;
+  outline: none;
+}
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  background: #f5f5f5;
+  border-radius: 5px;
+}
+.popup_top,
+.popup_center,
+.popup_bottom {
+  width: 100%;
+  position: absolute;
+}
+.popup_top {
+  color: #36b1dd;
+  text-align: center;
+  top: 0;
+  border-bottom: 1px solid #36b1dd;
+  font-weight: bold;
+  line-height: 0.6rem;
+}
+.popup_center {
+  color: #7f7f80;
+  top: 20%;
+}
+.popup_center big {
+  color: #7f7f80;
+  text-align: absolute;
+  line-height: 1rem;
+  display: block;
+}
+.popup_center p {
+  color: #7f7f80;
+  text-align: left;
+  font-size: 0.28rem;
+  line-height: 0.4rem;
+  display: block;
+  padding: 0 0.6rem;
+  text-indent: 2em;
+}
+.popup_bottom {
+  color: #36b1dd;
+  text-align: absolute;
+  height: .8rem;
+  line-height: 0.8rem;
+  border-top: 1px dashed #36b1dd;
+  bottom: 0;
+  cursor: pointer;
+}

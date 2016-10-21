@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<title>弹窗实例</title>
+		<link rel="stylesheet" href="style/css/base/reset.css" />
+		<link rel="stylesheet" href="style/css/common/common.css" />
+		<link rel="stylesheet" href="style/css/common/main.css" />
+		<link rel="stylesheet" href="style/css/page/pop.css" />
+		<script type="text/javascript" src="style/js/base/flexible.js" ></script>
+		<script type="text/javascript" src="style/js/common/init.js" ></script>
+		<script type="text/javascript" src="style/js/page/pop.js" ></script>
+	</head>
+	<body class="bgColor">
+		<header class="PageHeader">			
+			<label class="fontSize32 color_3">弹窗实例</label>
+		</header>
+		<div class="content1 text_alignCenter">
+			<input type="button" value="内容弹窗" class="popBtn" id="contentBtn"/>
+			<input type="button" value="提示弹窗" class="popBtn" id="tipBtn"/>
+			<!--提示弹窗-->
+			<div class="popup js-tip" style="display:none;">
+			    <div class="popup_center">
+			    	<big>请选择后提交!</big>
+			    </div>
+			    <div class="popup_bottom js-close1">OK</div>
+			</div>
+			<!--内容弹窗-->
+			<div class="popup js-content" style="display: none;">
+				<div class="popup_top">故障描述</div>
+			    <div class="popup_center">
+			    	<p>习近平晚宴讲话中美互联网论坛90后ceo求婚田华拒友嫌丑被扇司机开车吃苹果国庆加班7天违法采妮父亲去世孙红雷回应罗志祥!</p>
+			    </div>
+			    <div class="popup_bottom js-close2">关  闭</div>
+			</div>
+		</div>
+	</body>
+</html>
