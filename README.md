@@ -11,4 +11,7 @@ app baseTemplate Modal
 侧边栏字母定位实例：[https://github.com/rocky-191/baseTemplateApp/blob/master/sideBarLocate.html](http://htmlpreview.github.io/?https://github.com/rocky-191/baseTemplateApp/blob/master/sideBarLocate.html)  
 
 1.0.1 version  
-新增了抽奖效果、刮刮乐、侧边栏滑出、页面上下翻页、表单按钮美化样式
+新增了抽奖效果、刮刮乐、侧边栏滑出、页面上下翻页、表单按钮美化样式  
+
+1.0.2 version  
+新增了自定义弹出框
