@@ -69,6 +69,10 @@ body {
 	margin-right: 10px;
 }
 
+.marginLeft{
+	padding-left: 0.2rem;
+}
+
 .searchIcon4{
 	width: 0.7rem;
 	height: 100%;
