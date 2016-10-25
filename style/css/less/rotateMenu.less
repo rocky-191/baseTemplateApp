@@ -1,0 +1,92 @@
+/*声明变量*/
+@height1:40px;
+@height2:80px;
+@border: 2px solid #fff;
+@borderRadius:50%;
+@color3:#333;
+@color6:#666;
+@colorf:#fff;
+@textAlignCenter:center;
+@posA:absolute;
+@posR:relative;
+@displayI:inline-block;
+/**调用变量***/
+body {
+  background: white url(../../image/bg.jpg) no-repeat fixed;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+a {
+  font-size: 14px;
+  text-decoration: none;
+  outline: 0;
+}
+
+.circle,
+.ring {
+  height: 256px;
+  position:@posR;
+  width: 256px;
+}
+
+.circle {
+  margin: 0 auto;
+  margin-top:1.5rem;
+}
+
+.ring {
+  background-color: rgba(0,0,0,0.5);
+  border-radius:@borderRadius;
+  opacity: 0;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+  -webkit-transform: scale(0.1) rotate(-270deg);
+  -moz-transform: scale(0.1) rotate(-270deg);
+  -transform: scale(0.1) rotate(-270deg);
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.open .ring {
+  opacity: 1;  
+  -webkit-transform: scale(1) rotate(0);
+  -moz-transform: scale(1) rotate(0);
+  -transform: scale(1) rotate(0);
+}
+
+.center {
+  background-color: rgba(255,255,255,0.3);
+  border-radius: @borderRadius;
+  border:@border;
+  bottom: 0;
+  color: @colorf;
+  height:@height2;
+  left: 0;
+  line-height:@height2;
+  margin: auto;
+  position: @posA;
+  right: 0;
+  text-align:@textAlignCenter;
+  top: 0;
+  width:@height2; 
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.open .center {
+  border-color: #aaaaaa;
+}
+
+.menuItem {
+  border-radius:@borderRadius;
+  color: #eeeeee;
+  display: block;
+  height:@height1;
+  line-height:@height1;
+  margin-left: -20px;
+  margin-top: -20px;
+  position:@posA;
+  text-align:@textAlignCenter;
+  width:@height1;
+}
