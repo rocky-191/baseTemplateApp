@@ -18,7 +18,7 @@ window.onload=function(){
 			}
 		}
 		contentDiv.style.left = -414 * i + "px";
-		contentDiv.style.left = -414 * (this.innerHTML - 1) + "px";
+		//contentDiv.style.left = -414 * (this.innerHTML - 1) + "px";
 	}
 	for(var i = 0; i < button.length; i++) {
 		button[i].onclick = clickButton;
