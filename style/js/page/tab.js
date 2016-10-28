@@ -17,7 +17,7 @@ window.onload=function(){
 				break;
 			}
 		}
-		contentDiv.style.left = -414 * i + "px";
+		contentDiv.style.left = -7.5 * i + "rem";
 		//contentDiv.style.left = -414 * (this.innerHTML - 1) + "px";
 	}
 	for(var i = 0; i < button.length; i++) {

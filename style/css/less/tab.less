@@ -11,6 +11,9 @@
 @posR:relative;
 @displayI:inline-block;
 /**调用变量***/
+body{
+    overflow-x: hidden;
+}
 .section_part1_ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,7 +43,7 @@
 }
     
 .tabContentDiv{
-    width:414px;
+    width:7.5rem;
     height:@height1;
     overflow: hidden;
     position:@posR;
@@ -48,15 +51,15 @@
 }
 
 .tabContent{
-    width:1656px;
+    width:30rem;
     position:@posA;
     left: 0;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
 }
 
 .tabContent> div {
-    width:414px;
+    width:7.5rem;
     float: left;
     line-height:@height1;
     text-align:@textAlignCenter;

@@ -1,5 +1,8 @@
 /*声明变量*/
 /**调用变量***/
+body {
+  overflow-x: hidden;
+}
 .section_part1_ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,21 +31,21 @@
   border-bottom: 0.04rem solid #01ccff;
 }
 .tabContentDiv {
-  width: 414px;
+  width: 7.5rem;
   height: 3rem;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
 }
 .tabContent {
-  width: 1656px;
+  width: 30rem;
   position: absolute;
   left: 0;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .tabContent > div {
-  width: 414px;
+  width: 7.5rem;
   float: left;
   line-height: 3rem;
   text-align: center;
