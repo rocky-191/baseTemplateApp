@@ -1,0 +1,31 @@
+/*声明变量*/
+@height:0.5rem;
+@border: 1px solid #ddd;
+@borderRadius:0.25rem;
+@color3:#333;
+@color6:#666;
+@colorf:#fff;
+@textAlignCenter:center;
+@fontSize3:0.3rem;
+/**调用变量***/
+.logo_content{width: 85%;height: 22rem; margin: 0 auto;margin-top: 2rem;font-size:@fontSize3;}
+.logo_tel>input{width: 100%;height:@height;margin-bottom: 0.5rem;border: 1px solid #51b8c0;border-radius:@borderRadius;font-size:@fontSize3;outline: none;}
+.logo_yzm>input{width: 56%;height:@height;border: 1px solid #51b8c0;border-radius:@borderRadius;font-size:@fontSize3;outline: none;}
+.logo_yzm>.validate_button{width: 40%;height:@height;background: #51b8c0;float: right;color: @colorf;line-height:@height;text-align:@textAlignCenter;border: 1px solid #51b8c0;cursor: pointer;border-radius:@borderRadius;}
+.logo_yzm>.hidden_button{width: 40%;height:@height;background: #CCCCCC;float: right;color:@colorf;line-height:@height;text-align:@textAlignCenter;border: 1px solid #CCCCCC;cursor: pointer;border-radius:@borderRadius;display: none;font-size:@fontSize3;}
+
+.confirmBtn{
+    display: block;
+    width: 100%;
+    border: none;
+    margin-top: 0.5rem;
+    outline: none;
+    height: @height;
+    line-height: @height;
+    border-radius:@borderRadius;
+    text-align: @textAlignCenter;
+    cursor: pointer;
+    font-size: @fontSize3;
+    color: @colorf;
+    background: #51b8c0;
+}

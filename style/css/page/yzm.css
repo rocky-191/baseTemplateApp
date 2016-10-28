@@ -1,0 +1,67 @@
+/*声明变量*/
+/**调用变量***/
+.logo_content {
+  width: 85%;
+  height: 22rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-size: 0.3rem;
+}
+.logo_tel > input {
+  width: 100%;
+  height: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #51b8c0;
+  border-radius: 0.25rem;
+  font-size: 0.3rem;
+  outline: none;
+}
+.logo_yzm > input {
+  width: 56%;
+  height: 0.5rem;
+  border: 1px solid #51b8c0;
+  border-radius: 0.25rem;
+  font-size: 0.3rem;
+  outline: none;
+}
+.logo_yzm > .validate_button {
+  width: 40%;
+  height: 0.5rem;
+  background: #51b8c0;
+  float: right;
+  color: #fff;
+  line-height: 0.5rem;
+  text-align: center;
+  border: 1px solid #51b8c0;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+.logo_yzm > .hidden_button {
+  width: 40%;
+  height: 0.5rem;
+  background: #CCCCCC;
+  float: right;
+  color: #fff;
+  line-height: 0.5rem;
+  text-align: center;
+  border: 1px solid #CCCCCC;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  display: none;
+  font-size: 0.3rem;
+}
+.confirmBtn {
+  display: block;
+  width: 100%;
+  border: none;
+  margin-top: 0.5rem;
+  outline: none;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.3rem;
+  color: #fff;
+  background: #51b8c0;
+}
