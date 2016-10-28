@@ -17,4 +17,4 @@ app baseTemplate Modal
 新增了自定义弹出框实例,sweet弹出框插件实例  
 
 1.0.3 version  
-新增了旋转菜单,字体图表库实例
+新增了旋转菜单,字体图表库实例,tab切换样式2，60s验证码
