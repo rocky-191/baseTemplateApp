@@ -1,0 +1,65 @@
+/*声明变量*/
+/**调用变量***/
+.section_part1_ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+}
+.section_part1_ul li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  text-align: center;
+  height: 0.76rem;
+  line-height: 0.76rem;
+  border-bottom: 0.04rem solid #f6f6f6;
+  color: #333;
+  font-size: 0.26rem;
+}
+.section_part1_ul li.workLiActive {
+  color: #00a8ff;
+  border-bottom: 0.04rem solid #01ccff;
+}
+.tabContentDiv {
+  width: 414px;
+  height: 3rem;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+.tabContent {
+  width: 1656px;
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.tabContent > div {
+  width: 414px;
+  float: left;
+  line-height: 3rem;
+  text-align: center;
+  font-size: 0.3rem;
+}
+.tabContent > div:nth-child(1) {
+  background-color: #CD402E;
+}
+#contant > div:nth-child(2) {
+  background-color: #0000FF;
+}
+#contant > div:nth-child(3) {
+  background-color: #008000;
+}
+#contant > div:nth-child(4) {
+  background-color: #FF9900;
+}
+#contant > div:nth-child(5) {
+  background-color: #FF0909;
+}
