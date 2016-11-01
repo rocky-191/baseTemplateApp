@@ -1,0 +1,89 @@
+/*声明变量*/
+@height:1rem;
+@height1:0.5rem;
+@border: 1px solid #ddd;
+@borderRadius:100%;
+@color3:#333;
+@color6:#666;
+@colorf:#fff;
+@textAlignCenter:center;
+@posA:absolute;
+@posR:relative;
+@posF:fixed;
+@displayI:inline-block;
+/**调用变量***/
+.click_nav_cont p.menu_btn {
+    position:@posF;
+    right: 20px;
+    bottom:40px;
+    z-index: 99;
+    width:@height;
+    height:@height;
+    line-height:@height;
+    background: #24c7ff;
+    border-radius: 50%;
+    color:@colorf;
+    font-size:0.3rem;
+    text-align:@textAlignCenter;
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(240,240,240,0);
+}
+.click_nav_cont p.menu_btn.active {
+    background: #23282b;
+}
+.menu_div {
+    position:@posF;
+    right: 20px;
+    bottom: 100px;
+    z-index: 88;
+    width: 1rem;
+    -ms-transform: translateX(120px);
+        transform: translateX(120px);
+    -webkit-transform: translateX(120px);
+}
+.menu_div.move_out {
+    animation:move_out 0.5s linear;
+    -webkit-animation:move_out 0.5s linear;
+}
+.menu_div.move_in {
+    right:20px;
+    -ms-transform: translateX(0px);
+        transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    animation:move_in 0.5s linear;
+    -webkit-animation:move_in 0.5s linear;
+}
+@keyframes move_in {
+    0% {-webkit-transform: translateX(120px);transform: translateX(120px);}
+    100% {-webkit-transform: translateX(0px);transform: translateX(0px);}
+}
+@-webkit-keyframes move_in {
+    0% {-webkit-transform: translateX(120px);}
+    100% {-webkit-transform: translateX(0px);}
+}
+@keyframes move_out {
+    0% {-webkit-transform: translateX(0px);transform: translateX(0px);}
+    100% {-webkit-transform: translateX(120px);transform: translateX(120px);}
+}
+@-webkit-keyframes move_out {
+    0% {-webkit-transform: translateX(0px);}
+    100% {-webkit-transform: translateX(120px);}
+}
+.menu_div li {
+    width:@borderRadius;
+    height:@height1;
+    line-height: @height1;
+    text-align:@textAlignCenter;
+    font-size:0.25rem;
+    background: #24c7ff;
+    margin-bottom:6px;
+    border-radius: 100px;
+}
+.menu_div li a {
+    display: block;
+    color: @colorf;
+    outline: none;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(240,240,240,0);
+}
