@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no" />
+<title>防止误触事件</title>
+<style>
+a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: red;
+	color: #fff;
+	margin: 20px;
+}
+</style>
+<script>
+document.addEventListener(
+	"touchstart",
+	function(e) {
+		e.preventDefault();
+	}
+);
+window.onload = function () {
+	var a = document.querySelectorAll("a");
+	//对每一个a标签添加touchmove事件,
+	for(var i = 0; i < a.length; i++) {
+		a[i].addEventListener(
+			"touchmove",
+			function() {
+				this.isMove = true;//定义一个变量来标识用户是否在元素上移动,
+			}
+		);
+		
+		//防止误触原理是,防止移动结束时触发此事件
+		
+		a[i].addEventListener(
+			"touchend",
+			function() {
+				//如果是移动就不会走if里边的事件.
+				if(!this.isMove) {
+					window.location.href = this.href;
+				}
+				this.isMove = false;
+			}
+		);
+	}
+};
+</script>
+</head>
+<body>
+<a href="http://www.baidu.com">百度</a>
+<a href="http://www.baidu.com">百度</a>
+<a href="http://www.baidu.com">百度</a>
+<a href="http://www.baidu.com">百度</a>
+<a href="http://www.baidu.com">百度</a>
+</body>
+</html>
