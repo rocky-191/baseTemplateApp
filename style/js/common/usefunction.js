@@ -183,7 +183,7 @@ language: (navigator.browserLanguage || navigator.language).toLowerCase()
 var ua = window.navigator.userAgent.toLowerCase();
 
 if(ua.match(/MicroMessenger/i) == 'micromessenger'){
-	$('.wholePage').show();
+	$('.wholePage').show();//微信浏览器
 }else if(browser.versions.ios || browser.versions.iPhone || browser.versions.iPad){
 	//$('#downMsg').show();
 	//苹果设备
@@ -192,4 +192,39 @@ if(ua.match(/MicroMessenger/i) == 'micromessenger'){
 	//$('#downMsg').show();
 	//安卓设备
 	location.href = "";
+}
+
+
+//居中显示弹出层
+function popBox(id){
+    var w =$(id).width();
+        var h =$(id).height();
+        var t = scrollY() +(windowHeight()/2)-(h/2);
+        if(t<0)t=0;
+    var l = scrollX()+((windowWidth())-(w))/2;
+    if(l<0) l=0;
+    $(id).css({left:l/20+'rem',top:t/20+'rem'});
+    $(id).css('display','block');
+}
+
+//浏览器视口的高度(兼容写法-male)
+function windowHeight() {
+    var de = document.documentElement;
+    return self.innerHeight || (de && de.clientHeight) || document.body.clientHeight;
+}
+//浏览器视口的宽度(兼容写法-male)
+function windowWidth() {
+    var de = document.documentElement;
+
+    return self.innerWidth || (de && de.clientWidth) || document.body.clientWidth
+}
+
+//判断微信浏览器
+function is_weixn(){
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+        return true;
+    } else {
+        return false;
+    }
 }
