@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+html{font-size:10px;}
+
+.head,.foot{
+	position:fixed;
+	left:0;
+	height:3.8rem;
+	line-height:3.8rem;
+	width:100%;
+	background-color:#99CC00;
+	text-align: center;
+	font-size: 1.6rem;
+}
+.head{
+	top:0;
+}
+.foot{
+	bottom:0;
+}
+.main{
+	position:fixed;
+	top:3.8rem;
+	bottom:3.8rem;
+	left:0;
+	width:100%;
+	overflow:scroll;
+	font-size: 1.6rem;
+}

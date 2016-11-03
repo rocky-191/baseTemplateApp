@@ -1,4 +1,3 @@
-/*声明变量*/
 /**调用变量***/
 .box {
   padding: 0.3rem;
@@ -280,7 +279,7 @@
   transition: all .2s ease;
   font-family: sans-serif;
   background: #888;
-  margin: 0.1rem 0 0.2rem 0;
+  margin: .1rem 0 .2rem 0;
 }
 .tgl-skewed + .tgl-btn:after,
 .tgl-skewed + .tgl-btn:before {
@@ -331,7 +330,7 @@
   background: #fff;
   border: 4px solid #f2f2f2;
   border-radius: 2em;
-  margin: 0.1rem 0 0.2rem 0;
+  margin: .1rem 0 .2rem 0;
 }
 .tgl-flat + .tgl-btn:after {
   -webkit-transition: all .2s ease;
@@ -355,7 +354,7 @@
   -webkit-perspective: 100px;
   -ms-perspective: 100px;
   perspective: 100px;
-  margin: 0.1rem 0 0.2rem 0;
+  margin: .1rem 0 .2rem 0;
 }
 .tgl-flip + .tgl-btn:after,
 .tgl-flip + .tgl-btn:before {
@@ -408,3 +407,4 @@
   -ms-transform: rotateY(20deg);
   transform: rotateY(20deg);
 }
+/*# sourceMappingURL=form.css.map */
