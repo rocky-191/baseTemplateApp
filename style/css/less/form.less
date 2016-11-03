@@ -96,7 +96,7 @@
 .toggle input:checked + .track-radio .handle::after{visibility:visible; background:@colorf;}
 
 .tgl{display:none}
-.tgl,.tgl *,.tgl :after,.tgl :before,.tgl+.tgl-btn,.tgl:after,.tgl:before{-webkit-box-sizing:@borderBox;box-sizing:@borderBox}
+.tgl,.tgl *,.tgl :after,.tgl :before,.tgl+.tgl-btn,.tgl:after,.tgl:before{-webkit-box-sizing:@borderBox;box-sizing:@borderBox;}
 .tgl ::-moz-selection,.tgl :after::-moz-selection,.tgl :before::-moz-selection,.tgl+.tgl-btn::-moz-selection,.tgl::-moz-selection,.tgl:after::-moz-selection,.tgl:before::-moz-selection{background:0 0}
 .tgl ::selection,.tgl :after::selection,.tgl :before::selection,.tgl+.tgl-btn::selection,.tgl::selection,.tgl:after::selection,.tgl:before::selection{background:0 0}
 .tgl+.tgl-btn{outline:0;display:@displayB;width:4em;height:2em;position:@posR;cursor:pointer}
@@ -109,7 +109,7 @@
 .tgl-skewed+.tgl-btn:after,.tgl-skewed+.tgl-btn:before{-webkit-transform:skew(10deg);-ms-transform:skew(10deg);transform:skew(10deg);display:@displayI;-webkit-transition:all .2s ease;transition:all .2s ease;width:100%;text-align:@textAlignCenter;position:@posA;line-height:2em;font-weight:700;color:@colorf;text-shadow:0 1px 0 rgba(0,0,0,.4)}
 .tgl-skewed+.tgl-btn:after{left:100%;content:attr(data-tg-on)}
 .tgl-skewed+.tgl-btn:before{left:0;content:attr(data-tg-off)}
-.tgl-skewed+.tgl-btn:active{background:@bgColor}
+.tgl-skewed+.tgl-btn:active{background:@bgColor;}
 .tgl-skewed+.tgl-btn:active:before{left:-10%}
 .tgl-skewed:checked+.tgl-btn{background:#86d993}
 .tgl-skewed:checked+.tgl-btn:before{left:-100%;}
@@ -122,7 +122,7 @@
 .tgl-flat:checked+.tgl-btn:after{left:50%;background:#7FC6A6;}
 
 .tgl-flip+.tgl-btn{padding:2px;-webkit-transition:all .2s ease;transition:all .2s ease;font-family:sans-serif;-webkit-perspective:100px;-ms-perspective:100px;perspective:100px;margin: @marginSy;}
-.tgl-flip+.tgl-btn:after,.tgl-flip+.tgl-btn:before{display:@displayI;-webkit-transition:all .4s ease;transition:all .4s ease;width:100%;text-align:@textAlignCenter;position:@posA;line-height:2em;font-weight:700;color:@colorf;top:0;left:0;-webkit-backface-visibility:hidden;-ms-backface-visibility:hidden;backface-visibility:hidden;border-radius:4px}
+.tgl-flip+.tgl-btn:after,.tgl-flip+.tgl-btn:before{display:@displayI;-webkit-transition:all .4s ease;transition:all .4s ease;width:100%;text-align:@textAlignCenter;position:@posA;line-height:2em;font-weight:700;color:@colorf;top:0;left:0;-webkit-backface-visibility:hidden;backface-visibility:hidden;border-radius:4px;}
 .tgl-flip+.tgl-btn:after{content:attr(data-tg-on);background:#02C66F;-webkit-transform:rotateY(-180deg);-ms-transform:rotateY(-180deg);transform:rotateY(-180deg)}
 .tgl-flip+.tgl-btn:before{background:#FF3A19;content:attr(data-tg-off)}
 .tgl-flip+.tgl-btn:active:before{-webkit-transform:rotateY(-20deg);-ms-transform:rotateY(-20deg);transform:rotateY(-20deg)}
