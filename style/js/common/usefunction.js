@@ -35,7 +35,9 @@ document.addEventListener(
 		2. 阻止页面上的系统菜单
 		
 	隐患:
-		页面上的所有滚动条失效	
+		页面上的所有滚动条失效
+	解决办法：
+		在QQ和微信（当然还包括其他浏览器，不过我没测试过）中如果有需要用到touch事件做的特效一定要在touchstart或者touchmove中添加event.preventDefault()方法。在touchstart中如果有event.preventDefault()方法， 将不会触发click事件和a标签方法。在这里可以使用tap代替click，但是a标签的话就不太方便了。如果在touchmove中有event.preventDefault()方法，最好加上方向判断，当然如果你页面内容不需要滚动条就不需要加判断了。
 		
 		
 */
