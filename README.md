@@ -23,4 +23,7 @@ app baseTemplate Modal
 新增了shili1.html事件点透实例，shili2.html防止误触实例，shili3.html手指touchEvent事件实例,dragNav.html拖动导航实例  
 
 1.0.5 version  
-修改了之前下拉刷新实例，增加了上拉加载数据方法。新增了ios中position为fixed兼容解决方案posFixed.html。
+修改了之前下拉刷新实例，增加了上拉加载数据方法。新增了ios中position为fixed兼容解决方案posFixed.html。  
+
+1.0.6 version  
+新增了usefunction.js，其中包含一些移动端常用方法。

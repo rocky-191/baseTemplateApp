@@ -228,3 +228,27 @@ function is_weixn(){
         return false;
     }
 }
+
+//监听屏幕旋转
+function orientationChange() {
+    switch(window.orientation) {
+    　　case 0: 
+            alert("肖像模式 0,screen-width: " + screen.width + "; screen-height:" + screen.height);
+            break;
+    　　case -90: 
+            alert("左旋 -90,screen-width: " + screen.width + "; screen-height:" + screen.height);
+            break;
+    　　case 90:   
+            alert("右旋 90,screen-width: " + screen.width + "; screen-height:" + screen.height);
+            break;
+    　　case 180:
+    		alert("风景模式180,screen-width: " + screen.width + "; screen-height:" + screen.height);
+       		break;
+    };
+};
+
+// 添加事件监听
+document.addEventListener('load', function(){
+    orientationChange();
+    window.onorientationchange = orientationChange;
+});
