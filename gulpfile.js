@@ -1,7 +1,9 @@
 //导入工具包 require('node_modules里对应模块')
 var gulp = require('gulp'), //本地安装gulp所用到的地方
     less = require('gulp-less'),
+    uglify = require('gulp-uglify'),//压缩js
     autoprefixer = require('gulp-autoprefixer'),//自动添加前缀
+    cssmin = require('gulp-clean-css'),//压缩css
     livereload = require('gulp-livereload');//自动刷新
 
 //定义一个testless任务
@@ -10,6 +12,25 @@ gulp.task('testless', function() {
         .pipe(less())
         .pipe(gulp.dest('style/css/page'))
         .pipe(livereload());
+});
+
+//定义压缩js文件任务
+gulp.task('jsmin', function () {
+    gulp.src('style/js/page/*.js')//指定压缩文件
+        .pipe(uglify())//压缩选项配置
+        .pipe(gulp.dest('style/js/distJS'));//制定压缩后的文件位置
+});
+
+//定义压缩css文件任务
+gulp.task('cssmin', function () {
+    gulp.src('style/css/page/*.css')
+        .pipe(cssmin({
+        	advanced: false,//类型：Boolean 默认：true [是否开启高级优化（合并选择器等）]
+            keepBreaks: true,//类型：Boolean 默认：false [是否保留换行]
+            keepSpecialComments: '*'
+            //保留所有特殊前缀 当你用autoprefixer生成的浏览器前缀，如果不加这个参数，有可能将会删除你的部分前缀
+        }))
+        .pipe(gulp.dest('style/css/distCss'));
 });
 
 var browserOptions = {
@@ -30,11 +51,6 @@ gulp.task('testAutoFx', function () {
     gulp.src('style/css/less/*.less')
         .pipe(autoprefixer({
             browsers: ['last 3 versions',
-					    'ie >= 6',
-					    'firefox >= 30',
-					    'chrome >= 34',
-					    'safari >= 6',
-					    'opera >= 12.1',
 					    'ios >= 6',
 					    'android >= 2.3',
 					    'UCAndroid>=9.9'
