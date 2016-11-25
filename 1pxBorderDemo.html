@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<title>1px边框</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.r_ul li {
+			  list-style: none;
+			  height: 50px;
+			  line-height:50px;
+			  padding-left: 15px;
+			  padding-right: 15px;
+			  position: relative;
+			}
+			.r_ul li:after {
+			  content: '';
+			  display: block;
+			  width: 200%;
+			  height: 200%;
+			  position: absolute;
+			  left: 0;
+			  top: 0;
+			  box-sizing: border-box;
+			  border-bottom: 1px solid #ddd;
+			  -webkit-transform-origin: left top;
+			  transform-origin: left top;
+			  -webkit-transform: scale(0.5);
+			  transform: scale(0.5);
+			}
+			.r_ul li:last-child {
+			  border-bottom: none;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="r_ul">
+			<li>
+				移动业务部
+			</li>
+			<li>
+				销售部
+			</li>
+			<li>
+				市场部
+			</li>
+			<li>
+				网络部
+			</li>
+			<li>
+				人事部
+			</li>
+			<li>
+				市场部
+			</li>
+		</ul>
+	</body>
+</html>
