@@ -252,3 +252,13 @@ document.addEventListener('load', function(){
     orientationChange();
     window.onorientationchange = orientationChange;
 });
+
+//模拟hover伪类,假设有个a标签,之后添加样式如
+/**
+ * a:hover, a.hover { /* 你的hover效果 */ }
+ ***/
+var myLinks = document.getElementsByTagName('a');
+for(var i = 0; i < myLinks.length; i++){
+	myLinks[i].addEventListener(’touchstart’, function(){this.className = “hover”;}, false);
+	myLinks[i].addEventListener(’touchend’, function(){this.className = “”;}, false);
+}

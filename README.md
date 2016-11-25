@@ -26,4 +26,7 @@ app baseTemplate Modal
 修改了之前下拉刷新实例，增加了上拉加载数据方法。新增了ios中position为fixed兼容解决方案posFixed.html。  
 
 1.0.6 version  
-新增了usefunction.js，其中包含一些移动端常用方法。
+新增了usefunction.js，其中包含一些移动端常用方法。  
+
+1.0.7 version  
+新增了移动端调试工具文件vconsole.min.js，调取摄像头实例（存在一定bug，只能调取前置摄像头，拍出照片会横向拉伸，暂时没有找到解决方法）

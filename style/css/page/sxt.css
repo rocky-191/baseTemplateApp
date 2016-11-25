@@ -1,0 +1,23 @@
+/*拍照相关组件的样式*/
+        *:focus{
+            outline: none;
+        }
+
+        .videoSy,.canvasSy{
+            margin: 20px auto;
+            /*border: 1px solid #000000;*/
+        }
+
+        .photoBtn{
+            width: 200px;
+            height: 80px;
+            border-radius: 20px;
+            background-color: greenyellow;
+            border: none;
+            margin: 0 auto;
+            font-size: 20px;
+        }
+
+        .photoBtn,.canvasSy,.videoSy{
+            display: block;
+        }
