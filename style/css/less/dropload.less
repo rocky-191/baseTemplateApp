@@ -5,7 +5,11 @@
 @color6:#666;
 @border: 1px solid #ddd;
 @borderRadius100:100%;
+@200:200%;
 @textAlignCenter:center;
+@posR:relative;
+@posA:absolute;
+@disB:block;
 /*调用变量*/
 
 .r_ul li{
@@ -13,7 +17,24 @@
     line-height:@height;
     padding-left: 15px;
     padding-right: 15px;
+//  border-bottom:@border;
+    position: @posR;
+}
+
+.r_ul li:after{
+    content: '';
+    display:@disB;
+    width:@200;
+    height:@200;
+    position:@posA;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
     border-bottom:@border;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
 }
 
 .r_ul li:last-child{

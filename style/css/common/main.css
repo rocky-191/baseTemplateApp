@@ -196,3 +196,39 @@ body {
 .marginTop01{
 	margin-top: 0.1rem;
 }
+
+/**
+ * 有用样式**/
+/* 单行省略 */
+.ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* 多行省略 */
+.ellipsis-2l {
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;    /* 数值代表显示几行 */
+	-webkit-box-orient: vertical;
+}
+
+/* 水平居中 */
+.flexbox-center {
+	-webkit-box-pack: center; 
+	-moz-box-pack: center; 
+	-ms-flex-pack: center; 
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+/* 垂直居中 */
+.flexbox-middle {
+	-webkit-box-align: center; 
+	-moz-box-align: center;
+	-ms-flex-align: center; 
+	-webkit-align-items: center;
+	align-items: center;
+}

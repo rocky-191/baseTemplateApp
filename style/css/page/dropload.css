@@ -5,7 +5,22 @@
   line-height: 1rem;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
+}
+.r_ul li:after {
+  content: '';
+  display: block;
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
   border-bottom: 1px solid #ddd;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
 }
 .r_ul li:last-child {
   border-bottom: none;
