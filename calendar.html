@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<title>日历实例</title>
+		<link rel="stylesheet" href="style/css/base/reset.css" />
+		<link rel="stylesheet" href="style/css/common/common.css" />
+		<link rel="stylesheet" href="style/css/common/main.css" />
+		<link rel="stylesheet" href="style/css/page/calendar.css" />
+		<script type="text/javascript" src="style/js/base/flexible.js" ></script>
+		<script type="text/javascript" src="style/js/common/init.js" ></script>
+	</head>
+	<body class="bgColor">
+		<header class="PageHeader">			
+			<label class="fontSize32 color_3">拖动导航实例</label>
+		</header>
+		<div class="content">
+			<div class="tip">1、当前选中日期为2016-11-20,可以自定义日期</div>
+		    <input type="text" class="calendarInput" id="currentDate" />
+		
+		    <div class="tip">2、可选的最小日期为今天</div>
+		    <input type="text" class="calendarInput" id="minDate" />
+		
+		    <div class="tip">3、可选的最大日期为今天</div>
+		    <input type="text" class="calendarInput" id="maxDate" />
+		
+		    <div class="tip">4、选择日期后回调</div>
+		    <input type="text" class="calendarInput" id="callback" />
+		</div>
+		<script type="text/javascript" src="style/js/base/zepto_min.js" ></script>
+		<script type="text/javascript" src="style/js/common/zepto.datepicker.js" ></script>
+		<script type="text/javascript" src="style/js/common/vconsole.min.js" ></script>
+		<script type="text/javascript" src="style/js/page/calendar.js" ></script>
+	</body>
+</html>

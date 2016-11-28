@@ -7,3 +7,8 @@ function init(){
         html.style.fontSize = windowWidth / 7.5 + 'px';
         // 等价于html.style.fontSize = windowWidth / 750 * 100 + 'px';    
 }
+
+(function () {	
+    //document.addEventListener('DOMContentLoaded', init, false);
+	init();
+})();

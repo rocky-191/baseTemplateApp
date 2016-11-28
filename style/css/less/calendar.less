@@ -1,0 +1,187 @@
+/*声明变量*/
+@height:1rem;
+@height1:0.6rem;
+@height2:0.55rem;
+@border: 1px solid #ddd;
+@borderRadius:100%;
+@color3:#333;
+@color6:#666;
+@colorf:#fff;
+@textAlignCenter:center;
+@posA:absolute;
+@posR:relative;
+@posF:fixed;
+@displayI:inline-block;
+@marginTop:0.2rem;
+@pos0:0;
+.tip{
+    font-size: 0.3rem;
+    color:@color6;
+    margin-top: @marginTop;
+}
+
+.calendarInput{
+    height: @height1;
+    line-height: @height1;
+    border:@border;
+}
+
+.flex-start {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.dp-mask {
+    background: #000 none repeat scroll 0 0;
+    display: block;
+    height:@borderRadius;
+    left:@pos0;
+    opacity:@pos0;
+    position:@posA;
+    top:@pos0;
+    -webkit-transition: opacity 0.5s linear 0s;
+    transition: opacity 0.5s linear 0s;
+    visibility: hidden;
+    width:@borderRadius;
+    z-index: 10;
+}
+
+    .dp-mask.show {
+        visibility: visible;
+        opacity: 0.25;
+    }
+
+.dp-panel {
+    -webkit-transition: -webkit-transform .3s ease-in-out 0s;
+    transition: -webkit-transform .3s ease-in-out 0s;
+    transition: transform .3s ease-in-out 0s;
+    transition: transform .3s ease-in-out 0s, -webkit-transform .3s ease-in-out 0s;
+    -ms-transform: translate3d(0,100%,0);
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+    position:@posF;
+    bottom:@pos0;
+    left:@pos0;
+    width:@borderRadius;
+    height: auto;
+    z-index: 11;
+    background-color: #F7F7F7;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Tahoma,arial,verdana,sans-serif;
+}
+
+    .dp-panel.show {
+        -ms-transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+
+.dp-head {
+    height:@height2;
+    line-height:@height2;
+}
+
+.dp-head-text {
+    display:@displayI;
+    width:@borderRadius;
+    text-align:@textAlignCenter;
+    font-size: 1.5em;
+    color:@color3;
+}
+
+.dp-select-box {
+    display:@displayI;
+    width: 49%;
+    position:@posR;
+}
+
+.dp-prev {
+    left:@pos0;
+}
+
+.dp-next {
+    right:@pos0;
+}
+
+.dp-prev, .dp-next {
+    position:@posA;
+    top:@pos0;
+    font-family: arial;
+    font-size: 1.6em;
+    display:@displayI;
+    width:@height2;
+    height:@height2;
+    text-align:@textAlignCenter;
+    color:@color3;
+}
+
+.dp-body {
+    position:@posR;
+    height:260px;
+}
+
+.dp-year, .dp-month, .dp-week {
+    list-style-type: none;
+    border-bottom: 1px solid #4eccc4;
+    overflow: hidden;
+}
+
+    .dp-year li, .dp-month li {
+        display:@displayI;
+        width: 32%;
+        font-weight: 400;
+        text-align:@textAlignCenter;
+        line-height: 3.8em;
+        font-size: 1.05em;
+    }
+
+.dp-date-box {
+    /*display: inline-block;*/
+    width: 33.5%;
+    text-align:@textAlignCenter;
+}
+
+.dp-date {
+    width:@borderRadius;
+    list-style-type: none;
+    overflow: hidden;
+    -webkit-transition: -webkit-transform .2s ease-in;
+    transition: -webkit-transform .2s ease-in;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+    .dp-week li, .dp-date li {
+        display:@displayI;
+        width: 14.28%;
+        font-weight: 400;
+        text-align:@textAlignCenter;
+        line-height: 2.5em;
+    }
+
+.dp-panel .disabled {
+    color: #4eccc4;
+}
+
+.dp-panel .select, .dp-panel .current {
+    background-color: #79afdb;
+    color:@colorf;
+}
+
+.dp-slide {
+    -webkit-transition: transform ease-in-out 0.5s;
+    -webkit-transition: -webkit-transform ease-in-out 0.2s;
+    transition: -webkit-transform ease-in-out 0.2s;
+    transition: transform ease-in-out 0.2s;
+    transition: transform ease-in-out 0.2s, -webkit-transform ease-in-out 0.2s;
+}

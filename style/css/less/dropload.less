@@ -29,12 +29,15 @@
     position:@posA;
     left: 0;
     top: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border-bottom:@border;
     -webkit-transform-origin: left top;
-    transform-origin: left top;
+    -ms-transform-origin: left top;
+        transform-origin: left top;
     -webkit-transform: scale(.5);
-    transform: scale(.5);
+    -ms-transform: scale(.5);
+        transform: scale(.5);
 }
 
 .r_ul li:last-child{
