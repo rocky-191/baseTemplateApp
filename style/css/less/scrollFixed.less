@@ -1,0 +1,72 @@
+/*声明变量*/
+@height:2rem;
+@height1:0.6rem;
+@height2:1rem;
+@borderRadius:100%;
+@colorf:#fff;
+@textAlignCenter:center;
+@posA:absolute;
+@posR:relative;
+@posF:fixed;
+@fontSize3:0.3rem;
+/**调用变量***/
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.home-wrap {
+    position:@posR;
+}
+
+.home-top,.home-adv {
+    width: @borderRadius;
+    color: @colorf;
+    text-align: @textAlignCenter;
+    font-size:@fontSize3;
+}
+.home-top {
+    position:@posA;
+    bottom: 0;
+    height:@height1;
+    line-height: @height1;
+    background-color: rgba(0,0,0,.3);
+}
+
+.home-adv {
+    height:@height;
+    background:blue;
+}
+.fixed {
+    position:@posF;
+    top: 0;
+    bottom: auto;
+    background-color: rgba(0,0,0,1);
+    z-index: 10;
+}
+
+.contentUl li{
+  list-style: none;
+  height:@height2;
+  line-height:@height2;
+  padding-left: 15px;
+  padding-right: 15px;
+  position:@posR;
+}
+.contentUl li:after {
+  content: '';
+  display: block;
+  width: 200%;
+  height: 200%;
+  position:@posA;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+}
+.contentUl li:last-child {
+  border-bottom: none;
+}
