@@ -11,14 +11,14 @@ window.onload=function(){
 			headerClone = $('.js-homeTop').clone();
 			$('.js-homeTop').remove();
 			// 添加固定效果
-			headerClone.addClass('fixed').removeClass('');
+			headerClone.addClass('fixed');
 			headerClone.prependTo('body');
 		} else {
 			// 克隆顶栏并把 home-wrap 里面的顶栏移除
 			headerClone = $('.js-homeTop').clone();
 			$('.js-homeTop').remove();
 			// 移除到固定效果，使其归位
-			headerClone.addClass().removeClass('fixed');
+			headerClone.removeClass('fixed');
 			headerClone.prependTo('.js-homeWrap');
 		}
 	});
