@@ -18,11 +18,13 @@ window.onload=function(){
 		tipModal.style.display="block";
 		showBg("mask");
 	};
-	closeBtn1.onclick=function(){
+	closeBtn1.onclick=function(e){
+		e.stopPropagation();
 		tipModal.style.display="none";
 		document.getElementById("mask").remove();
 	};
-	closeBtn2.onclick=function(){
+	closeBtn2.onclick=function(e){
+		e.stopPropagation();
 		ctModal.style.display="none";
 		document.getElementById("mask").remove();
 	};
@@ -40,6 +42,12 @@ function showBg(id){
 	newMask.style.top = "0px"; 
 	newMask.style.left = "0px"; 
 	newMask.style.background = "#666"; 
-	newMask.style.opacity = "0.40"; 
+	newMask.style.opacity = "0.40";
+	newMask.onclick = function(){
+			console.log("2");
+			document.querySelector(".js-content").style.display="none";
+			document.querySelector(".js-tip").style.display="none";
+			this.remove();
+		};
 	document.body.appendChild(newMask);  
 }
