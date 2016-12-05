@@ -48,11 +48,14 @@
   position: absolute;
   left: 0;
   top: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-bottom: 1px solid #ddd;
   -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
   transform-origin: left top;
   -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
   transform: scale(0.5);
 }
 .contentUl li:last-child {

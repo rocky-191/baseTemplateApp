@@ -1,0 +1,130 @@
+/*声明变量*/
+/**调用变量***/
+.order-list {
+  width: 100%;
+  padding-bottom: 0.7rem;
+}
+.order-list section {
+  min-height: 3rem;
+  height: auto;
+  position: relative;
+  clear: both;
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+  background: #fff;
+  margin-bottom: .5rem;
+}
+.order-list-top {
+  width: 92.5%;
+  height: 1.2rem;
+  position: relative;
+  margin: auto;
+  clear: both;
+  border-bottom: 1px solid #e5e5e5;
+}
+.order-list-top-img {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 57px;
+  height: 57px;
+  background: url(../../image/hfs.jpg) no-repeat;
+  background-size: 100%;
+}
+.order-list-top-info {
+  padding-left: 67px;
+  padding-top: 10px;
+  height: 0.85rem;
+}
+.order-list-top-info h1 {
+  display: block;
+  font-size: 0.22rem;
+  color: #333;
+  line-height: 0.24rem;
+  height: 0.48rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.order-list-top-info h2 {
+  color: #ff4d55;
+  font-size: 0.26rem;
+  font-weight: 600;
+  line-height: 20px;
+}
+.order-list-top-info h2 span {
+  font-size: 0.24rem;
+  font-weight: 100;
+}
+.order-list-Below {
+  width: 92.5%;
+  padding-top: 13.5px;
+  position: relative;
+  margin: auto;
+  clear: both;
+}
+.order-list-Below h1 {
+  font-size: 0.22rem;
+  color: #333;
+  line-height: 1;
+  height: 27px;
+  float: left;
+}
+.order-list-Below ul {
+  float: left;
+  padding-left: 15px;
+}
+.order-list-Below ul li {
+  float: left;
+  width: 28px;
+  height: 17px;
+  background: url(../../image/pic_heart01.png) no-repeat left top;
+  -webkit-background-size: 17px 17px;
+  background-size: 17px 17px;
+}
+.order-list-Below ul li.on {
+  background: url(../../image/pic_heart02.png) no-repeat left top;
+  -webkit-background-size: 17px 17px;
+  background-size: 17px 17px;
+}
+.order-list-Below .order-textbox {
+  clear: both;
+}
+.order-list-Below .order-textbox textarea {
+  width: 100%;
+  height: 0.6rem;
+  padding: 5px;
+  border: none;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 0.24rem;
+  color: #ccc;
+  resize: none;
+}
+.order-button {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  clear: both;
+  width: 100%;
+  height: 0.8rem;
+  padding-top: 0.1rem;
+  border-top: 1px solid #e5e5e5;
+  background: #fff;
+  text-align: center;
+}
+.order-button a {
+  margin: 0 auto;
+  display: block;
+  width: 92.5%;
+  height: 0.65rem;
+  line-height: 0.65rem;
+  background: #fff;
+  border: 1px solid #ff4d55;
+  border-radius: 4px;
+  color: #ff4d55;
+  font-size: 0.24rem;
+}
