@@ -262,3 +262,22 @@ for(var i = 0; i < myLinks.length; i++){
 	myLinks[i].addEventListener(’touchstart’, function(){this.className = “hover”;}, false);
 	myLinks[i].addEventListener(’touchend’, function(){this.className = “”;}, false);
 }
+
+//手机端判断各个平台浏览器及操作系统平台
+function checkPlatform(){
+	if(/android/i.test(navigator.userAgent)){
+		document.write("This is Android'browser.");//这是Android平台下浏览器
+	}
+	if(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)){
+		document.write("This is iOS'browser.");//这是iOS平台下浏览器
+	}
+	if(/Linux/i.test(navigator.userAgent)){
+		document.write("This is Linux'browser.");//这是Linux平台下浏览器
+	}
+	if(/Linux/i.test(navigator.platform)){
+		document.write("This is Linux operating system.");//这是Linux操作系统平台
+	}
+	if(/MicroMessenger/i.test(navigator.userAgent)){
+		document.write("This is MicroMessenger'browser.");//这是微信平台下浏览器
+	}
+}
