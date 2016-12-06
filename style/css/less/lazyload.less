@@ -1,0 +1,48 @@
+/*声明变量*/
+@height:1.9rem;
+@height1:1.7rem;
+@overflow:hidden;
+/**调用变量***/
+.imageUl li{
+    width: 33%;
+    float: left;
+    overflow:@overflow;
+}
+
+.imageUl li:last-child:after{
+    content: "";
+    height: 1px;
+    clear: both;
+    overflow:@overflow;
+}
+
+.imageDiv{
+    width:@height;
+    height:@height1;
+    margin: 0 auto;
+}
+
+.imageDiv_part1{
+    background: url(../../image/iPhone.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.imageDiv_part2{
+    background: url(../../image/legao.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.imageDiv_part3{
+    background: url(../../image/pptvPhone.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.imageDiv_part4{
+    background: url(../../image/pptvVip.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.imageDiv_part5{
+    background: url(../../image/thirt.jpg) no-repeat;
+    background-size: 100%;
+}
