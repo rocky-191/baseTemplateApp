@@ -244,10 +244,10 @@ function orientationChange() {
     　　case 180:
     		alert("风景模式180,screen-width: " + screen.width + "; screen-height:" + screen.height);
        		break;
-    };
-};
+    }
+}
 
-// 添加事件监听
+//添加事件监听
 document.addEventListener('load', function(){
     orientationChange();
     window.onorientationchange = orientationChange;
@@ -280,4 +280,89 @@ function checkPlatform(){
 	if(/MicroMessenger/i.test(navigator.userAgent)){
 		document.write("This is MicroMessenger'browser.");//这是微信平台下浏览器
 	}
+}
+
+
+/*网络类型，处理，性能分析，进行监听*/
+window.addEventListener('load', function(e) {
+ if (navigator.onLine) {
+  // new page load
+  processOnline();
+ } else {
+   // the app is probably already cached and (maybe) bookmarked...
+   processOffline();
+ }
+}, false);
+
+window.addEventListener("offline", function(e) {
+  // we just lost our connection and entered offline mode, disable eternal link
+  processOffline(e.type);
+}, false);
+
+window.addEventListener("online", function(e) {
+  // just came back online, enable links
+  processOnline(e.type);
+}, false);
+
+function processOnline(eventType) {
+
+  setupApp();
+  checkAppCache();
+
+  // reset our once disabled offline links
+  if (eventType) {
+    for (var i = 0; i < disabledLinks.length; i++) {
+      disabledLinks[i].onclick = null;
+    }
+  }
+}
+
+function processOffline() {
+  setupApp();
+
+  // disable external links until we come back - setting the bounds of app
+  disabledLinks = getUnconvertedLinks(document);
+
+  // helper for onlcick below
+  var onclickHelper = function(e) {
+    return function(f) {
+      alert('This app is currently offline and cannot access the hotness');return false;
+    }
+  };
+
+  for (var i = 0; i < disabledLinks.length; i++) {
+    if (disabledLinks[i].onclick == null) {
+      //alert user we're not online
+      disabledLinks[i].onclick = onclickHelper(disabledLinks[i].href);
+
+    }
+  }
+}
+
+function setupApp(){
+  // create a custom object if navigator.connection isn't available
+  var connection = navigator.connection || {'type':'0'};
+  if (connection.type == 2 || connection.type == 1) {
+      //wifi/ethernet
+      //Coffee Wifi latency: ~75ms-200ms
+      //Home Wifi latency: ~25-35ms
+      //Coffee Wifi DL speed: ~550kbps-650kbps
+      //Home Wifi DL speed: ~1000kbps-2000kbps
+      fetchAndCache(true);
+  } else if (connection.type == 3) {
+  //edge
+      //ATT Edge latency: ~400-600ms
+      //ATT Edge DL speed: ~2-10kbps
+      fetchAndCache(false);
+  } else if (connection.type == 2) {
+      //3g
+      //ATT 3G latency: ~400ms
+      //Verizon 3G latency: ~150-250ms
+      //ATT 3G DL speed: ~60-100kbps
+      //Verizon 3G DL speed: ~20-70kbps
+      fetchAndCache(false);
+  } else {
+  //unknown
+      fetchAndCache(true);
+  }
 }
