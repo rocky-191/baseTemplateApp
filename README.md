@@ -35,4 +35,4 @@ app baseTemplate Modal
 新增了日历实例calendar.html，新增了一些备用样式useStyle.css，新增了滑动切换固定导航实例scrollFixed.html,新增了心型评价实例starGrade.html,新增了图片懒加载实例imageLazyLoad.html  
 
 1.0.9 version  
-新增了移动手势方向判断moveDirection.html
+新增了移动手势方向判断moveDirection.html,摇一摇实例（测试小米，6s plus没有问题，华为荣耀摇动有问题）

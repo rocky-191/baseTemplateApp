@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<title>摇一摇实例</title>
+		<link rel="stylesheet" href="style/css/base/reset.css" />
+		<link rel="stylesheet" href="style/css/common/common.css" />
+		<link rel="stylesheet" href="style/css/common/main.css" />
+		<script type="text/javascript" src="style/js/base/flexible.js" ></script>
+		<script type="text/javascript" src="style/js/common/init.js" ></script>
+		<style type="text/css">
+			.shakeDiv{
+				margin:3rem auto;
+				margin-bottom: 0;
+				width:3rem;
+				height:4rem;
+				line-height: 4rem;
+				text-align: center;
+				background: #007AFF;
+				color: #fff;
+				font-size:0.3rem;
+			}
+			audio{
+				display:block;
+				width: 4rem;
+				height: 2rem;
+			}
+			.shakeAudio{
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<body class="bgColor">
+		<header class="PageHeader">			
+			<label class="fontSize32 color_3">摇一摇实例</label>
+		</header>
+		<div class="content">
+			<div class="shakeDiv">摇一摇</div>
+			<div class="marginTop02">
+				<label class="fontSize24 color_3">测试小米，6s plus没有问题，华为荣耀摇动有问题</label>
+			</div>
+			<audio id="musicBox" class="shakeAudio" preload controls src="style/media/shake.mp3">
+		</div>
+		<script type="text/javascript" src="style/js/page/shake.js" ></script>
+	</body>
+</html>
