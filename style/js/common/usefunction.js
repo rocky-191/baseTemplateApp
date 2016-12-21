@@ -366,3 +366,8 @@ function setupApp(){
       fetchAndCache(true);
   }
 }
+
+// 隐藏地址栏  & 处理事件的时候 ，防止滚动条出现
+window.addEventListener('load', function(){ 
+        setTimeout(function(){ window.scrollTo(0, 1); }, 100); 
+});
