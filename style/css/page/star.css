@@ -29,6 +29,7 @@
   width: 57px;
   height: 57px;
   background: url(../../image/hfs.jpg) no-repeat;
+  -webkit-background-size: 100% 100%;
   background-size: 100%;
 }
 .order-list-top-info {

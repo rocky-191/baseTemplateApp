@@ -130,3 +130,20 @@ saside > ul li:active {
 .progressBarWidth100 {
   width: 100%;
 }
+.container {
+  padding: 0.3rem;
+}
+.justify {
+  text-align: justify;
+  text-align-last: justify;
+}
+.justify i {
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  border-radius: 100%;
+  background: black;
+  color: #fff;
+}
