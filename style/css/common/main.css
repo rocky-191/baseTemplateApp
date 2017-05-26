@@ -232,3 +232,24 @@ body {
 	-webkit-align-items: center;
 	align-items: center;
 }
+
+.navUl li{
+	height: 1rem;
+	line-height: 1rem;
+	border-bottom: 1px solid #ddd;
+	overflow: hidden;
+	padding: 0 0.2rem;
+	position: relative;
+}
+
+.navUl li .fa{
+	position: absolute;
+	top: 50%;
+	right: 0.2rem;
+	transform: translateY(-50%);
+}
+
+.navUl li a{
+	color: #666;
+	text-decoration: none;
+}
