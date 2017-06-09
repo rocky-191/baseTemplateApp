@@ -50,7 +50,9 @@ window.onload=function(){
         endYear: currYear + 10 //结束年份
 	};
 	$("#ksTime").mobiscroll($.extend(opt['date'], opt['defaultType']));
-	$("#jsTime").mobiscroll($.extend(opt['date'], opt['defaultType']));
+	var optDateTime = $.extend(opt['datetime'], opt['defaultType']);
+	$("#jsTime").mobiscroll(optDateTime).datetime(optDateTime);
+	//$("#jsTime").mobiscroll($.extend(opt['date'], opt['defaultType']));
 };
 
 //显示遮罩层js
