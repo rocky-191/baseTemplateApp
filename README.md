@@ -38,4 +38,6 @@ app baseTemplate Modal
 新增了移动手势方向判断moveDirection.html,摇一摇实例shakeDemo.html（测试小米，6s plus没有问题，华为荣耀摇动有问题）  
 
 1.0.10 version  
-新增了图片翻转和开关实例iamgeRetota.html
+新增了图片翻转和开关实例iamgeRetota.html  
+
+[演示地址](https://rocky-191.github.io/baseTemplateApp/index.html)
