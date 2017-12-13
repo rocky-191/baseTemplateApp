@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="initial-scale=1">
+   <!--<meta name="viewport" content="initial-scale=1, viewport-fit=cover">-->
+   <title>Designing Websites for iPhone X: Respecting the safe areas</title>
+   <style>
+       * {
+           padding: 0;
+           margin: 0;
+       }
+       /*html,body {*/
+           /*height: 100%;*/
+       /*}*/
+       body {
+           background: grey;
+           /*padding-top: constant(safe-area-inset-top);*/
+           /*padding-left: constant(safe-area-inset-left);*/
+           /*padding-right: constant(safe-area-inset-right);*/
+           /*padding-bottom: constant(safe-area-inset-bottom);*/
+       }
+       .top {
+           width: 100%;
+           height: 44px;
+           background: purple;
+       }
+       .bottom {
+           position: fixed;
+           bottom: 0;
+           left: 0;
+           right: 0;
+           height: 44px;
+           color: black;
+           background: green;
+       }
+   </style>
+</head>
+<body>
+   <div class="top">this is top</div>
+   <div>content</div>
+   <div class="bottom">this is bottom</div>
+</body>
+</html>
